@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.config import Config
 from kivy.core.window import Window
 from kivy.lang import Builder
-from kivy.properties import StringProperty
+from kivy.properties import StringProperty, NumericProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 from itertools import cycle
 
@@ -104,13 +104,16 @@ class Flashcard:
 class MainScreen(Screen):
     image_source = StringProperty('resources/images/background.png')
     menu_image_source = StringProperty('resources/images/menu_icon.png')
+    font_name_menu = StringProperty("Arial")
+    font_name_words = StringProperty("Georgia")
 
     def on_pre_enter(self):
         Window.size = (380, 680)
 
 class SettingsScreen(Screen):
     image_source = StringProperty('resources/images/background.png')
-
+    font_size = StringProperty("21dp")
+    font_name = StringProperty("Arial")
 
 Builder.load_file("flashcard.kv")
 
