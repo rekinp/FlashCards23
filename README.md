@@ -6,3 +6,4 @@ Resources:
  - used [FrequencyWords](https://github.com/hermitdave/FrequencyWords/blob/master/content/2018/de/de_50k.txt) as a learning base
  - translated them to english and polish using [GOOGLETRANSLATE](https://support.google.com/docs/answer/3093331?hl=en)
 
+![img.png](img.png)
